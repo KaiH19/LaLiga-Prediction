@@ -1,0 +1,2 @@
+Model,Accuracy,FeatureCount,FeaturesUsed
+Random Forest,0.9401709401709402,6,"Points, GoalsScored, GoalsConceded, GoalDifference, WinRate, AvgGoals"
