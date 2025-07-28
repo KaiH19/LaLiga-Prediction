@@ -1,0 +1,23 @@
+/* Card hover styles */
+.team-card {
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  text-align: center;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+  background-color: #f39c12; /* orange/gold */
+  color: #000;
+}
