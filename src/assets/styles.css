@@ -21,3 +21,68 @@
   background-color: #f39c12; /* orange/gold */
   color: #000;
 }
+
+/* Slider styling */
+.rc-slider {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 500px;
+  height: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rc-slider-track {
+  background-color: #f39c12; /* Orange */
+}
+
+.rc-slider-handle {
+  border-color: #f39c12 !important;
+  background-color: #f39c12 !important;
+  width: 20px;
+  height: 20px;
+  margin-top: -6px;
+}
+
+.rc-slider-handle:active {
+  animation: click-pop 0.2s ease-in-out;
+}
+
+.rc-slider-handle:focus {
+  box-shadow: 0 0 8px #f39c12;
+}
+
+.rc-slider-dot-active {
+  border-color: #f39c12;
+}
+
+/* Simulate button styling */
+#simulate-btn {
+  background-color: #f39c12;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#simulate-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(243, 156, 18, 0.5);
+}
+
+@keyframes click-pop {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(0.92); }
+  100% { transform: scale(1); }
+}
+
+#simulate-btn:active {
+  animation: click-pop 0.2s ease-in-out;
+}
+
+
