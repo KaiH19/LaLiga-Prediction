@@ -5,7 +5,7 @@ import numpy as np
 import joblib
 
 # Load model and define features
-rf_model = joblib.load("artifacts/model_random_forest_rf.pkl")
+rf_model = joblib.load("Project/artifacts/model_random_forest_rf.pkl")
 feature_cols = ['Points', 'GoalsScored', 'GoalsConceded', 'GoalDifference', 'WinRate', 'AvgGoals']
 
 # Load real dataset
