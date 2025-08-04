@@ -112,9 +112,9 @@ def simulate_results(n_clicks, num_seasons, team_name):
     win_count = sum(predictions)
     return html.Div([
         html.H2(f"{team_name} - Simulation Results for {num_seasons} Season(s)", style={"textAlign": "center"}),
-        html.P(f"🏆 Predicted Wins: {win_count} out of {num_seasons}"),
-        html.P(f"📊 Season-by-Season: {' | '.join(str(p) for p in predictions)}"),
-        html.P("🔵 Winner (1), 🔴 Not Winner (0)")
+        html.P(f"Predicted Wins: {win_count} out of {num_seasons}"),
+        html.P(f"Season-by-Season: {' | '.join(str(p) for p in predictions)}"),
+        html.P("Winner (1), Not Winner (0)")
     ])
 
 if __name__ == "__main__":
